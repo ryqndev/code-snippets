@@ -1,4 +1,10 @@
 # Game Server 
+Jump to: 
+ - [What is it?](#what-is-it)
+ - [How does it work?](#how-does-it-work)
+ - [How is it implemented?](#how-is-it-implemented)
+ - [How to run it](#how-to-run-it)
+
 
 ## What is it?
 
@@ -7,9 +13,9 @@ takes in user input commands.
 
 ## How does it work?
 
-The code here is split into 2 files:
-* client
-* server
+The code here is split into 2 folders:
+- client - web client
+- server - node backend
 
 ## How is it implemented?
 
