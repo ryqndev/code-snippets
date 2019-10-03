@@ -22,8 +22,14 @@
         <div id="letter-display"></div>
         <script>
             function getLetterAndSendToServer( e ){
-
-                document.getElementById('letter-display').innerText = e.key;
+                let url = `http://localhost:3000/input/${e.key}`;
+                fetch(url)
+                .then( (res) => {
+                    document.getElementById('letter-display').innerText = e.key;
+                })
+                .catch( (err) => {
+                    console.log(err);
+                })
             }
         </script>
     </body>
