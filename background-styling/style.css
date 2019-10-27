@@ -56,9 +56,25 @@ body{
     border-radius: 4px;
     box-shadow: 1px 1px 2px #ffffff;
     background-color: orange;
-    transition: 2s 2.5s opacity, 1s 0s background-color;
+    transition: 2s 2.5s opacity , 1s 0s background-color;
 }
 #header-cta.fadeIn{
     opacity: 1 !important;
     background-color: white;
+}
+.keyframe-test{
+    height: 0;
+    width: 0;
+    background-color: #151515;
+    animation: my-animation 2s 2500ms infinite alternate both;
+}
+@keyframes my-animation{
+    from{
+        height: 0px;
+        width: 0px;
+    }
+    to{
+        height: 100px;
+        width: 100px;
+    }
 }
