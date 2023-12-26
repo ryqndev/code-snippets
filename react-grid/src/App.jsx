@@ -1,4 +1,4 @@
-import { News } from "./ pages/News/News";
+import { News } from "./pages/News/News";
 import { Navigation } from "./components/Navigation";
 import cn from "./App.module.css";
 

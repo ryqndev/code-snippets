@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import clsx from "clsx";
 import cn from "./Content.module.css";
 
