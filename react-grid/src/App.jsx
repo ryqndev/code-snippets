@@ -1,8 +1,17 @@
 import { News } from "./ pages/News/News";
-import "./App.css";
+import { Navigation } from "./components/Navigation";
+import cn from "./App.module.css";
 
 function App() {
-  return <News />;
+  return (
+    <div className={cn.container}>
+      <Navigation />
+
+      <main>
+        <News />
+      </main>
+    </div>
+  );
 }
 
 export default App;
