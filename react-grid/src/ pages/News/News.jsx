@@ -12,7 +12,7 @@ export const News = () => {
 
   useEffect(() => {
     (async () => {
-      setNews(await fetchNews());
+      setNews((await fetchNews())?.articles ?? []);
     })();
   }, []);
 

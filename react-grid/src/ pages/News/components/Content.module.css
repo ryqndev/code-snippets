@@ -1,3 +1,28 @@
 .container {
-    
+    padding: 20px;
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.container h1 {
+    margin-top: 0;
+}
+
+.article {
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid #eee;
 }
