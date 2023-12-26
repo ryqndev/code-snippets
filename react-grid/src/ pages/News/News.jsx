@@ -6,7 +6,7 @@ import { Filter } from "./components/Filter";
 import { Content } from "./components/Content";
 
 export const News = () => {
-  const [news, setNews] = useState(null);
+  const [news, setNews] = useState([]);
 
   const [filters, setFilters] = useState({ view: "grid" });
 

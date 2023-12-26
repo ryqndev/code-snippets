@@ -1,3 +1,26 @@
 .container {
-    
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+}
+
+.toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+.container h2 {
+    margin: 10px;
+}
+
+.toggle>button { 
+    border: none;
+    padding: 0 20px;
+    transition: background-color 250ms, color 250ms;
+}
+
+.toggle>button.selected{
+    background-color: black;
+    color: white;
 }
