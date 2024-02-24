@@ -9,21 +9,29 @@ export const Content = ({ news, filters }) => {
   return (
     <div className={clsx(cn.container)}>
       <h1>Articles</h1>
-      <div className={clsx(viewType === "grid" ? cn.grid : cn.list)}>
+      {/* <div className={clsx(viewType === "grid" ? cn.grid : cn.list)}>
         {news.map((newsItem, idx) => (
           <NewsArticle key={idx} {...newsItem} />
         ))}
-      </div>
+      </div> */}
+      {viewType === "grid" ? <GridView /> : <ListView />}
     </div>
   );
 };
 
-const NewsArticle = ({ author, description }) => {
-  if (!author || !description) return null;
-  return (
-    <div className={cn.article}>
-      <h2>{author}</h2>
-      <div dangerouslySetInnerHTML={{ __html: description }}></div>
-    </div>
-  );
+// const NewsArticle = ({ author, description }) => {
+//   if (!author || !description) return null;
+//   return (
+//     <div className={cn.article}>
+//       <h2>{author}</h2>
+//       <div dangerouslySetInnerHTML={{ __html: description }}></div>
+//     </div>
+//   );
+// };
+
+const GridView = () => {
+  return <div></div>;
+};
+const ListView = () => {
+  return <div></div>;
 };
