@@ -12,3 +12,8 @@ two ways: either
 
 1. install all packages. should be able to follow [these instructions](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 2. run `python -m flask run` (make sure you name your main function file `app.py`)
+
+## test apis
+
+install insomnia
+https://insomnia.rest/

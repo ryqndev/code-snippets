@@ -21,3 +21,6 @@ def get_all_dogs_route():
 @app.route("/restaurants/<location>")
 def get_all_restaurants(location):
     return jsonify(get_all_restaurants_in_area(location))
+
+if(__name__ == "__main__"):
+    app.run()
