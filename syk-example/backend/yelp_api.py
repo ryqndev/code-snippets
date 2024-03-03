@@ -4,6 +4,10 @@ def get_all_restaurants_in_area(location):
     url = "https://api.yelp.com/v3/businesses/search"
 
     querystring = {"location": location, "term": "pho"}
+    # c++ -> struct
+    # java -> map, TreeMap, HashMap, 
+    # python -> dictinoary
+    # js -> json -> Java Script. Object. Notation.
 
     payload = ""
     headers = {
