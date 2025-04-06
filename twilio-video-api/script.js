@@ -20,6 +20,7 @@ const accessToken = "";
 Video.connect(accessToken, { name: "my-new-room" }).then(
   (room) => {
     console.log(`Successfully joined a Room: ${room}`);
+    alert(room);
 
     Video.createLocalVideoTrack().then((track) => {
       const localMediaContainer = document.getElementById("video");
